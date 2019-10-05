@@ -49,8 +49,8 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | Feature		                        | Node.js | Java | Go | Ruby |
 | ------------------------------------- | --- | --- | --- | --- |
 | Circuit Breaker                       | ✔️ | ✔️ | ❔ | ❔ |
-| Retry                                 | ✔️ | ❌️ | ❔ | ❔ |
-| Timeout                               | ✔️ | ❌️ | ❔ | ❔ |
+| Retry                                 | ✔️ | ✔️ | ❔ | ❔ |
+| Timeout                               | ✔️ | ✔️ | ❔ | ❔ |
 | Bulkhead                              | ✔️ | ❌️ | ❔ | ❔ |
 | Fallback                              | ✔️ | ❌️ | ❔ | ❔ |
 
