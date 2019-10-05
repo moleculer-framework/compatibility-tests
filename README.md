@@ -1,6 +1,15 @@
 # compatibility-tests
 Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 
+## Projects
+
+| Name | Language | Repository | Latest version | Lead Maintainer |
+| ---- | -------- | ---------- | -------------- | ---------- | 
+| moleculer-js | Node.js | https://github.com/moleculerjs/moleculer | 0.13.11 | [icebob](https://github.com/icebob) |
+| moleculer-java | Java | https://github.com/moleculer-java/moleculer-java | 1.1.3 | [berkesa](https://github.com/berkesa) |
+| moleculer-go | Go | https://github.com/moleculer-go/moleculer | 0.2.1 | [pentateu](https://github.com/pentateu) |
+| moleculer-ruby| Ruby | https://github.com/moleculer-ruby/moleculer | 0.3 | [fugufish](https://github.com/fugufish) |
+
 ## Feature Matrix
 
 ### Service
@@ -200,4 +209,6 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | Runner/Starter                        | ✔️ | ✔️ | ❔ | ❔ |
 | API Gateway                           | ✔️ | ✔️ | ❔ | ❔ |
 | DB access service                     | ✔️ | ✔️ | ❔ | ❔ |
+| Ping nodes                     		| ✔️ | ✔️ | ❔ | ❔ |
+| Heartbeat                     		| ✔️ | ✔️ | ❔ | ❔ |
 
