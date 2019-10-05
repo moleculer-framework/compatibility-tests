@@ -6,7 +6,7 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 ### Service
 | Feature		                      | Node.js | Java | Go | Ruby |
 | ----------------------------------- | --- | --- | --- | --- |
-| Versioned service                   | ✔️ | ✔️ | ❔ | ❓️ |
+| Versioned service                   | ✔️ | ✔️ | ❔ | ❔ |
 | Mixins							  | ✔️ | ❌ | ️❔ | ❔ |
 | Setting							  | ✔️ | ✔️ | ❔ | ❔ |
 | Metadata							  | ✔️ | ❌ | ❔ | ❔ |
@@ -27,17 +27,17 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | Parameter validation                | ✔️ | ❌ | ❔ | ❔ |
 | Stream in request                   | ✔️ | ✔️ | ❔ | ❔ |
 | Stream in response                  | ✔️ | ✔️ | ❔ | ❔ |
-| Action visibility                   | ✔️ | ❌ | ❌ | ❌ |
-| Action hooks                        | ✔️ | ❌ | ❌ | ❌ |
+| Action visibility                   | ✔️ | ❌ | ❔ | ❔ |
+| Action hooks                        | ✔️ | ❌ | ❔ | ❔ |
 
 ### Events
 | Feature		                      | Node.js | Java | Go | Ruby |
 | ----------------------------------- | --- | --- | --- | --- |
-| Balanced events                     | ✔️ | ✔️ | ❌ | ❌ |
-| Broadcast events                    | ✔️ | ✔️ | ❌️ | ❌️ |
-| BroadcastLocal events               | ✔️ | ✔️ | ❌️ | ❌ |
+| Balanced events                     | ✔️ | ✔️ | ❔ | ❔ |
+| Broadcast events                    | ✔️ | ✔️ | ❔️ | ❔️ |
+| BroadcastLocal events               | ✔️ | ✔️ | ❔️ | ❔ |
 | Context-based events                | ✔️ | ️️❌️ | ❌️ | ❌ |
-| Custom group definition             | ✔️ | ️️❌️ | ❌️ | ❌ |
+| Custom group definition             | ✔️ | ️️❔ | ❔ | ❔ |
 | **Internal events**                 |  ️ | ️️  |   |   |
 | `$services.changed`                 | ✔️ | ️️❌️ | ❌️ | ❌ |
 | `$node.*`                           | ✔️ | ️️❌️ | ❌️ | ❌ |
@@ -47,11 +47,11 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 ### Fault-tolerance
 | Feature		                        | Node.js | Java | Go | Ruby |
 | ------------------------------------- | --- | --- | --- | --- |
-| Circuit Breaker                       | ✔️ | ❌ | ❌ | ❌ |
-| Retry                                 | ✔️ | ❌ | ❌ | ❌ |
-| Timeout                               | ✔️ | ❌ | ❌ | ❌ |
-| Bulkhead                              | ✔️ | ❌ | ❌ | ❌ |
-| Fallback                              | ✔️ | ❌ | ❌ | ❌ |
+| Circuit Breaker                       | ✔️ | ❔ | ❔ | ❔ |
+| Retry                                 | ✔️ | ❔ | ❔ | ❔ |
+| Timeout                               | ✔️ | ❔ | ❔ | ❔ |
+| Bulkhead                              | ✔️ | ❔ | ❔ | ❔ |
+| Fallback                              | ✔️ | ❔ | ❔ | ❔ |
 
 ### Transporters
 | Feature		                        | Node.js | Java | Go | Ruby |
@@ -60,33 +60,33 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | Redis                                 | ✔️ | ✔️ | ❌ | ❌ |
 | MQTT                                  | ✔️ | ✔️ | ❌ | ❌ |
 | AMQP (0.9)                            | ✔️ | ✔️ | ❌ | ❌ |
-| AMQP (1.0)                            | ✔️ | ❌ | ❌ | ❌ |
+| AMQP (1.0)                            | ❌ | ❌ | ❌ | ❌ |
 | Kafka                                 | ✔️ | ✔️ | ❌ | ❌ |
 | NATS Streaming                        | ✔️ | ❌ | ❌ | ❌ |
 | TCP                                   | ✔️ | ✔️ | ❌ | ❌ |
 | Google PubSub                         | ❌ | ✔️ | ❌ | ❌ |
-| Custom                                | ✔️ | ❌ | ❌ | ❌ |
+| Custom                                | ✔️ | ❔ | ❔ | ❔ |
 | Disabled balancing                    | ✔️ | ❌ | ❌ | ❌ |
 
 ### Serializers
 | Feature		                        | Node.js | Java | Go | Ruby |
 | ------------------------------------- | --- | --- | --- | --- |
 | JSON                                  | ✔️ | ✔️ | ✔️ | ✔️ |
-| MsgPack/Notepack                      | ✔️ | ✔️ | ❌ | ❌ |
-| Avro                                  | ✔️ | ❌ | ❌ | ❌ |
-| Protocol Buffer                       | ✔️ | ❌ | ❌ | ❌ |
-| Thrift                                | ✔️ | ❌ | ❌ | ❌ |
-| Custom                                | ✔️ | ❌ | ❌ | ❌ |
+| MsgPack/Notepack                      | ✔️ | ✔️ | ❔ | ❔ |
+| Avro                                  | ✔️ | ❌ | ❔ | ❔ |
+| Protocol Buffer                       | ✔️ | ❌ | ❔ | ❔ |
+| Thrift                                | ✔️ | ❌ | ❔ | ❔ |
+| Custom                                | ✔️ | ❔ | ❔ | ❔ |
 
 ### Strategies
 | Feature		                        | Node.js | Java | Go | Ruby |
 | ------------------------------------- | --- | --- | --- | --- |
-| Round-Robin                           | ✔️ | ✔️ | ✔️ | ❌️ |
-| Random                                | ✔️ | ✔️ | ❌️ | ❌️ |
+| Round-Robin                           | ✔️ | ✔️ | ✔️ | ️️✔️ |
+| Random                                | ✔️ | ✔️ | ❔ | ❔ |
 | CPU usage                             | ✔️ | ✔️ | ❌️ | ❌️ |
 | Latency-based                         | ✔️ | ✔️ | ❌️ | ❌️ |
 | Sharding                              | ✔️ | ❌ | ❌ | ❌ |
-| Custom                                | ✔️ | ❌ | ❌ | ❌ |
+| Custom                                | ✔️ | ❔ | ❔ | ❔ |
 
 ### Caching
 | Feature		                        | Node.js | Java | Go | Ruby |
@@ -106,32 +106,33 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | Feature		                        | Node.js | Java | Go | Ruby |
 | ------------------------------------- | --- | --- | --- | --- |
 | Middleware support                    | ✔️ | ✔️ | ❌ | ❌ |
-| `localAction`                         | ✔️ | ✔️ | ❌ | ❌ |
-| `remoteAction`                        | ✔️ | ✔️ | ❌ | ❌ |
-| `localEvent`                          | ✔️ | ❌ | ❌ | ❌ |
-| `createService`                       | ✔️ | ❌ | ❌ | ❌ |
-| `destroyService`                      | ✔️ | ❌ | ❌ | ❌ |
-| `call`                                | ✔️ | ❌ | ❌ | ❌ |
-| `mcall`                               | ✔️ | ❌ | ❌ | ❌ |
-| `emit`                                | ✔️ | ❌ | ❌ | ❌ |
-| `broadcast`                           | ✔️ | ❌ | ❌ | ❌ |
-| `broadcastLocal`                      | ✔️ | ❌ | ❌ | ❌ |
-| `serviceCreated`                      | ✔️ | ❌ | ❌ | ❌ |
-| `serviceStarting`                     | ✔️ | ❌ | ❌ | ❌ |
-| `serviceStarted`                      | ✔️ | ❌ | ❌ | ❌ |
-| `serviceStopping`                     | ✔️ | ❌ | ❌ | ❌ |
-| `serviceStopped`                      | ✔️ | ❌ | ❌ | ❌ |
-| `registerLocalService`                | ✔️ | ❌ | ❌ | ❌ |
-| `serviceCreating`                     | ✔️ | ❌ | ❌ | ❌ |
-| `transitPublish`                      | ✔️ | ❌ | ❌ | ❌ |
-| `transitMessageHandler`               | ✔️ | ❌ | ❌ | ❌ |
-| `transporterSend`                     | ✔️ | ❌ | ❌ | ❌ |
-| `transporterReceive`                  | ✔️ | ❌ | ❌ | ❌ |
-| `created`                             | ✔️ | ❌ | ❌ | ❌ |
-| `starting`                            | ✔️ | ❌ | ❌ | ❌ |
-| `started`                             | ✔️ | ❌ | ❌ | ❌ |
-| `stopping`                            | ✔️ | ❌ | ❌ | ❌ |
-| `stopped`                             | ✔️ | ❌ | ❌ | ❌ |
+| **Hooks**                             |  |  |  |  |
+| - `localAction`                       | ✔️ | ✔️ | ❌ | ❌ |
+| - `remoteAction`                      | ✔️ | ✔️ | ❌ | ❌ |
+| - `localEvent`                        | ✔️ | ❌ | ❌ | ❌ |
+| - `createService`                     | ✔️ | ❌ | ❌ | ❌ |
+| - `destroyService`                    | ✔️ | ❌ | ❌ | ❌ |
+| - `call`                              | ✔️ | ❌ | ❌ | ❌ |
+| - `mcall`                             | ✔️ | ❌ | ❌ | ❌ |
+| - `emit`                              | ✔️ | ❌ | ❌ | ❌ |
+| - `broadcast`                         | ✔️ | ❌ | ❌ | ❌ |
+| - `broadcastLocal`                    | ✔️ | ❌ | ❌ | ❌ |
+| - `serviceCreated`                    | ✔️ | ❌ | ❌ | ❌ |
+| - `serviceStarting`                   | ✔️ | ❌ | ❌ | ❌ |
+| - `serviceStarted`                    | ✔️ | ❌ | ❌ | ❌ |
+| - `serviceStopping`                   | ✔️ | ❌ | ❌ | ❌ |
+| - `serviceStopped`                    | ✔️ | ❌ | ❌ | ❌ |
+| - `registerLocalService`              | ✔️ | ❌ | ❌ | ❌ |
+| - `serviceCreating`                   | ✔️ | ❌ | ❌ | ❌ |
+| - `transitPublish`                    | ✔️ | ❌ | ❌ | ❌ |
+| - `transitMessageHandler`             | ✔️ | ❌ | ❌ | ❌ |
+| - `transporterSend`                   | ✔️ | ❌ | ❌ | ❌ |
+| - `transporterReceive`                | ✔️ | ❌ | ❌ | ❌ |
+| - `created`                           | ✔️ | ❌ | ❌ | ❌ |
+| - `starting`                          | ✔️ | ❌ | ❌ | ❌ |
+| - `started`                           | ✔️ | ❌ | ❌ | ❌ |
+| - `stopping`                          | ✔️ | ❌ | ❌ | ❌ |
+| - `stopped`                           | ✔️ | ❌ | ❌ | ❌ |
 
 ### Metrics
 | Feature		                        | Node.js | Java | Go | Ruby |
@@ -178,16 +179,17 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 
 ### Errors
 | Feature		                        | Node.js | Java | Go | Ruby |
-| `MoleculerError`                      | ✔️ | ️️✔️ | ❌ | ❌ |
-| `MoleculerRetryableError`             | ✔️ | ❌ | ❌ | ❌ |
-| `MoleculerServerError`                | ✔️ | ❌ | ❌ | ❌ |
-| `MoleculerClientError`                | ✔️ | ❌ | ❌ | ❌ |
+| ------------------------------------- | --- | --- | --- | --- |
+| `MoleculerError`                      | ✔️ | ️️✔️ | ❔ | ❔ |
+| `MoleculerRetryableError`             | ✔️ | ❔ | ❔ | ❔ |
+| `MoleculerServerError`                | ✔️ | ❔ | ❔ | ❔ |
+| `MoleculerClientError`                | ✔️ | ❔ | ❔ | ❔ |
 
 ### Additional features
 | Feature		                        | Node.js | Java | Go | Ruby |
 | ------------------------------------- | --- | --- | --- | --- |
-| Hot-reload                            | ✔️ | ❌ | ❌ | ❌ |
-| Runner/Starter                        | ✔️ | ✔️ | ❌ | ❌ |
-| API Gateway                           | ✔️ | ✔️ | ❌ | ❌ |
-| DB access service                     | ✔️ | ✔️ | ❌ | ❌ |
+| Hot-reload                            | ✔️ | ❌ | ❔ | ❔ |
+| Runner/Starter                        | ✔️ | ✔️ | ❔ | ❔ |
+| API Gateway                           | ✔️ | ✔️ | ❔ | ❔ |
+| DB access service                     | ✔️ | ✔️ | ❔ | ❔ |
 
