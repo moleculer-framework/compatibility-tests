@@ -10,9 +10,10 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | Mixins							  | ✔️ | ❌ | ️❔ | ❔ |
 | Setting							  | ✔️ | ✔️ | ❔ | ❔ |
 | Metadata							  | ✔️ | ❌ | ❔ | ❔ |
-| Dependencies						  | ✔️ | ❌ | ❔ | ❔ |
+| Dependencies						  | ✔️ | ✔️ | ❔ | ❔ |
 | Lifecycle events  			      | ✔️ | ️️️✔️ | ❔ | ❔ |
 | `$node` internal service            | ✔️ | ❌ | ❔ | ❔ |
+| Class-based service				  | ✔️ | ✔️ | ✔️ | ✔️ |
 
 ### Action calls
 | Feature		                      | Node.js | Java | Go | Ruby |
@@ -37,7 +38,7 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | Broadcast events                    | ✔️ | ✔️ | ❔️ | ❔️ |
 | BroadcastLocal events               | ✔️ | ✔️ | ❔️ | ❔ |
 | Context-based events                | ✔️ | ️️❌️ | ❌️ | ❌ |
-| Custom group definition             | ✔️ | ️️❔ | ❔ | ❔ |
+| Custom group definition             | ✔️ | ️️✔️ | ❔ | ❔ |
 | **Internal events**                 |  ️ | ️️  |   |   |
 | `$services.changed`                 | ✔️ | ️️❌️ | ❌️ | ❌ |
 | `$node.*`                           | ✔️ | ️️❌️ | ❌️ | ❌ |
@@ -47,11 +48,11 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 ### Fault-tolerance
 | Feature		                        | Node.js | Java | Go | Ruby |
 | ------------------------------------- | --- | --- | --- | --- |
-| Circuit Breaker                       | ✔️ | ❔ | ❔ | ❔ |
-| Retry                                 | ✔️ | ❔ | ❔ | ❔ |
-| Timeout                               | ✔️ | ❔ | ❔ | ❔ |
-| Bulkhead                              | ✔️ | ❔ | ❔ | ❔ |
-| Fallback                              | ✔️ | ❔ | ❔ | ❔ |
+| Circuit Breaker                       | ✔️ | ✔️ | ❔ | ❔ |
+| Retry                                 | ✔️ | ❌️ | ❔ | ❔ |
+| Timeout                               | ✔️ | ❌️ | ❔ | ❔ |
+| Bulkhead                              | ✔️ | ❌️ | ❔ | ❔ |
+| Fallback                              | ✔️ | ❌️ | ❔ | ❔ |
 
 ### Transporters
 | Feature		                        | Node.js | Java | Go | Ruby |
@@ -65,7 +66,8 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | NATS Streaming                        | ✔️ | ❌ | ❌ | ❌ |
 | TCP                                   | ✔️ | ✔️ | ❌ | ❌ |
 | Google PubSub                         | ❌ | ✔️ | ❌ | ❌ |
-| Custom                                | ✔️ | ❔ | ❔ | ❔ |
+| JMS                                 	| ❌ | ✔️ | ❌ | ❌ |
+| Custom                                | ✔️ | ✔️ | ❔ | ❔ |
 | Disabled balancing                    | ✔️ | ❌ | ❌ | ❌ |
 
 ### Serializers
@@ -76,7 +78,11 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | Avro                                  | ✔️ | ❌ | ❔ | ❔ |
 | Protocol Buffer                       | ✔️ | ❌ | ❔ | ❔ |
 | Thrift                                | ✔️ | ❌ | ❔ | ❔ |
-| Custom                                | ✔️ | ❔ | ❔ | ❔ |
+| CBOR                                	| ❌ | ✔️ | ❌ | ❌ |
+| Amazon Ion                           	| ❌ | ✔️ | ❌ | ❌ |
+| BSON                                	| ❌ | ✔️ | ❌ | ❌ |
+| SMILE                                	| ❌ | ✔️ | ❌ | ❌ |
+| Custom                                | ✔️ | ✔️ | ❔ | ❔ |
 
 ### Strategies
 | Feature		                        | Node.js | Java | Go | Ruby |
@@ -86,7 +92,7 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | CPU usage                             | ✔️ | ✔️ | ❌️ | ❌️ |
 | Latency-based                         | ✔️ | ✔️ | ❌️ | ❌️ |
 | Sharding                              | ✔️ | ❌ | ❌ | ❌ |
-| Custom                                | ✔️ | ❔ | ❔ | ❔ |
+| Custom                                | ✔️ | ✔️ | ❔ | ❔ |
 
 ### Caching
 | Feature		                        | Node.js | Java | Go | Ruby |
@@ -100,7 +106,9 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | - Memory                              | ✔️ | ✔️ | ❌ | ❌ |
 | - Memory LRU                          | ✔️ | ❌ | ❌ | ❌ |
 | - Redis                               | ✔️ | ✔️ | ❌ | ❌ |
-| - Custom                              | ✔️ | ❌ | ❌ | ❌ |
+| - JCache                              | ❌ | ✔️ | ❌ | ❌ |
+| - Off-heap                            | ❌ | ✔️ | ❌ | ❌ |
+| - Custom                              | ✔️ | ✔️ | ❌ | ❌ |
 
 ### Middlewares
 | Feature		                        | Node.js | Java | Go | Ruby |
