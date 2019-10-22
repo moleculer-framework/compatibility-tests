@@ -15,13 +15,13 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 ### Service
 | Feature		                      | Node.js | Java | Go | Ruby |
 | ----------------------------------- | --- | --- | --- | --- |
-| Versioned service                   | ✔️ | ✔️ | ❔ | ❌ |
-| Mixins							  | ✔️ | ❌ | ️❔ | ❌ |
-| Setting							  | ✔️ | ✔️ | ❔ | ✔ |
-| Metadata							  | ✔️ | ❌ | ❔ | ❌ |
-| Dependencies						  | ✔️ | ✔️ | ❔ | ✔ |
-| Lifecycle events  			      | ✔️ | ️️️✔️ | ❔ | ❌ |
-| `$node` internal service            | ✔️ | ❌ | ❔ | ❌ |
+| Versioned service                   | ✔️ | ✔️ | ❌ | ❌ |
+| Mixins							  | ✔️ | ❌ | ️️️✔ | ❌ |
+| Setting							  | ✔️ | ✔️ | ✔ | ✔ |
+| Metadata							  | ✔️ | ❌ | ✔ | ❌ |
+| Dependencies						  | ✔️ | ✔️ | ✔ | ✔ |
+| Lifecycle events  			      | ✔️ | ️️️✔️ | ✔ | ❌ |
+| `$node` internal service            | ✔️ | ❌ | ✔ | ❌ |
 | Class-based service				  | ✔️ | ✔️ | ✔️ | ✔️ |
 
 ### Action calls
@@ -29,27 +29,27 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | ----------------------------------- | --- | --- | --- | --- |
 | Local call                          | ✔️ | ✔️ | ✔️ | ✔️ |
 | Remote call                         | ✔️ | ✔️ | ✔️ | ✔️ |
-| Nested call                         | ✔️ | ✔️ | ❔️ | ❌ |
-| Direct call                         | ✔️ | ✔️ | ❔️ | ❌ |
-| Request metadata                    | ✔️ | ✔️ | ❔️ | ❌ |
-| Response metadata                   | ✔️ | ✔️ | ❔️ | ❌ |
-| Metadata merging                    | ✔️ | ✔️ | ❔️ | ❌ |
-| Parameter validation                | ✔️ | ❌ | ❔ | ❌ |
-| Stream in request                   | ✔️ | ✔️ | ❔ | ❌ |
-| Stream in response                  | ✔️ | ✔️ | ❔ | ❌ |
-| Action visibility                   | ✔️ | ❌ | ❔ | ❔ |
-| Action hooks                        | ✔️ | ❌ | ❔ | ❌ |
+| Nested call                         | ✔️ | ✔️ | ✔ | ❌ |
+| Direct call                         | ✔️ | ✔️ | ✔ | ❌ |
+| Request metadata                    | ✔️ | ✔️ | ✔ | ❌ |
+| Response metadata                   | ✔️ | ✔️ | ✔ | ❌ |
+| Metadata merging                    | ✔️ | ✔️ | ✔ | ❌ |
+| Parameter validation                | ✔️ | ❌ | ❌ | ❌ |
+| Stream in request                   | ✔️ | ✔️ | ❌ | ❌ |
+| Stream in response                  | ✔️ | ✔️ | ❌ | ❌ |
+| Action visibility                   | ✔️ | ❌ | ❌ | ❔ |
+| Action hooks                        | ✔️ | ❌ | ❌ | ❌ |
 
 ### Events
 | Feature		                      | Node.js | Java | Go | Ruby |
 | ----------------------------------- | --- | --- | --- | --- |
-| Balanced events                     | ✔️ | ✔️ | ❔ | ✔ |
-| Broadcast events                    | ✔️ | ✔️ | ❔️ | ❌ |
-| BroadcastLocal events               | ✔️ | ✔️ | ❔️ | ❌ |
+| Balanced events                     | ✔️ | ✔️ | ✔ | ✔ |
+| Broadcast events                    | ✔️ | ✔️ | ✔ | ❌ |
+| BroadcastLocal events               | ✔️ | ✔️ | ✔ | ❌ |
 | Context-based events                | ✔️ | ️️❌️ | ❌️ | ❌ |
-| Custom group definition             | ✔️ | ️️✔️ | ❔ | ❌ |
+| Custom group definition             | ✔️ | ️️✔️ | ✔ | ❌ |
 | **Internal events**                 |  ️ | ️️  |   |   |
-| `$services.changed`                 | ✔️ | ️️❌️ | ❌️ | ❌ |
+| `$services.changed`                 | ✔️ | ️️❌️ | ✔ | ❌ |
 | `$node.*`                           | ✔️ | ️️❌️ | ❌️ | ❌ |
 | `$broker.*`                         | ✔️ | ️️❌️ | ❌️ | ❌ |
 | `$transporter.*`                    | ✔️ | ️️❌️ | ❌️ | ❌ |
@@ -57,11 +57,11 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 ### Fault-tolerance
 | Feature		                        | Node.js | Java | Go | Ruby |
 | ------------------------------------- | --- | --- | --- | --- |
-| Circuit Breaker                       | ✔️ | ✔️ | ❔ | ❔ |
-| Retry                                 | ✔️ | ✔️ | ❔ | ❔ |
-| Timeout                               | ✔️ | ✔️ | ❔ | ❔ |
-| Bulkhead                              | ✔️ | ❌️ | ❔ | ❔ |
-| Fallback                              | ✔️ | ❌️ | ❔ | ❔ |
+| Circuit Breaker                       | ✔️ | ✔️ | ❌️ | ❔ |
+| Retry                                 | ✔️ | ✔️ | ❌️ | ❔ |
+| Timeout                               | ✔️ | ✔️ | ❌️ | ❔ |
+| Bulkhead                              | ✔️ | ❌️ | ❌️ | ❔ |
+| Fallback                              | ✔️ | ❌️ | ️️️️️️❌️ | ❔ |
 
 ### Transporters
 | Feature		                        | Node.js | Java | Go | Ruby |
@@ -72,36 +72,36 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | AMQP (0.9)                            | ✔️ | ✔️ | ❌ | ❌ |
 | AMQP (1.0)                            | ❌ | ❌ | ❌ | ❌ |
 | Kafka                                 | ✔️ | ✔️ | ❌ | ❌ |
-| NATS Streaming                        | ✔️ | ❌ | ❌ | ❌ |
+| NATS Streaming                        | ✔️ | ❌ | ✔️ | ❌ |
 | TCP                                   | ✔️ | ✔️ | ❌ | ❌ |
 | Google PubSub                         | ❌ | ✔️ | ❌ | ❌ |
 | JMS                                 	| ❌ | ✔️ | ❌ | ❌ |
-| Custom                                | ✔️ | ✔️ | ❔ | ❌ |
-| Disabled balancing                    | ✔️ | ❌ | ❌ | ❌ |
+| Custom                                | ✔️ | ✔️ | ✔️ | ❌ |
+| Disabled balancing                    | ✔️ | ❌ | ✔️ | ❌ |
 
 ### Serializers
 | Feature		                        | Node.js | Java | Go | Ruby |
 | ------------------------------------- | --- | --- | --- | --- |
 | JSON                                  | ✔️ | ✔️ | ✔️ | ✔️ |
 | MsgPack/Notepack                      | ✔️ | ✔️ | ❔ | ❌ |
-| Avro                                  | ✔️ | ❌ | ❔ | ❌ |
-| Protocol Buffer                       | ✔️ | ❌ | ❔ | ❌ |
-| Thrift                                | ✔️ | ❌ | ❔ | ❌ |
+| Avro                                  | ✔️ | ❌ | ❌ | ❌ |
+| Protocol Buffer                       | ✔️ | ❌ | ❌ | ❌ |
+| Thrift                                | ✔️ | ❌ | ❌ | ❌ |
 | CBOR                                	| ❌ | ✔️ | ❌ | ❌ |
 | Amazon Ion                           	| ❌ | ✔️ | ❌ | ❌ |
 | BSON                                	| ❌ | ✔️ | ❌ | ❌ |
 | SMILE                                	| ❌ | ✔️ | ❌ | ❌ |
-| Custom                                | ✔️ | ✔️ | ❔ | ❔ |
+| Custom                                | ✔️ | ✔️️️️️️️️ | ✔️ | ❔ |
 
 ### Strategies
 | Feature		                        | Node.js | Java | Go | Ruby |
 | ------------------------------------- | --- | --- | --- | --- |
 | Round-Robin                           | ✔️ | ✔️ | ✔️ | ️️✔️ |
-| Random                                | ✔️ | ✔️ | ❔ | ❌ |
+| Random                                | ✔️ | ✔️ | ✔️ | ❌ |
 | CPU usage                             | ✔️ | ✔️ | ❌️ | ❌️ |
 | Latency-based                         | ✔️ | ✔️ | ❌️ | ❌️ |
 | Sharding                              | ✔️ | ❌ | ❌ | ❌ |
-| Custom                                | ✔️ | ✔️ | ❔ | ❔ |
+| Custom                                | ✔️ | ✔️ | ✔️ | ❔ |
 
 ### Caching
 | Feature		                        | Node.js | Java | Go | Ruby |
@@ -122,12 +122,12 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 ### Middlewares
 | Feature		                        | Node.js | Java | Go | Ruby |
 | ------------------------------------- | --- | --- | --- | --- |
-| Middleware support                    | ✔️ | ✔️ | ❌ | ❌ |
+| Middleware support                    | ✔️ | ✔️ | ✔️ | ❌ |
 | **Hooks**                             |  |  |  |  |
 | - `localAction`                       | ✔️ | ✔️ | ❌ | ❌ |
 | - `remoteAction`                      | ✔️ | ✔️ | ❌ | ❌ |
 | - `localEvent`                        | ✔️ | ❌ | ❌ | ❌ |
-| - `createService`                     | ✔️ | ❌ | ❌ | ❌ |
+| - `createService`                     | ✔️ | ❌ | ✔️ | ❌ |
 | - `destroyService`                    | ✔️ | ❌ | ❌ | ❌ |
 | - `call`                              | ✔️ | ❌ | ❌ | ❌ |
 | - `mcall`                             | ✔️ | ❌ | ❌ | ❌ |
@@ -145,19 +145,19 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | - `transitMessageHandler`             | ✔️ | ❌ | ❌ | ❌ |
 | - `transporterSend`                   | ✔️ | ❌ | ❌ | ❌ |
 | - `transporterReceive`                | ✔️ | ❌ | ❌ | ❌ |
-| - `created`                           | ✔️ | ❌ | ❌ | ❌ |
-| - `starting`                          | ✔️ | ❌ | ❌ | ❌ |
-| - `started`                           | ✔️ | ❌ | ❌ | ❌ |
-| - `stopping`                          | ✔️ | ❌ | ❌ | ❌ |
-| - `stopped`                           | ✔️ | ❌ | ❌ | ❌ |
+| - `created`                           | ✔️ | ❌ | ✔️ | ❌ |
+| - `starting`                          | ✔️ | ❌ | ✔️ | ❌ |
+| - `started`                           | ✔️ | ❌ | ✔️ | ❌ |
+| - `stopping`                          | ✔️ | ❌ | ✔️ | ❌ |
+| - `stopped`                           | ✔️ | ❌ | ✔️ | ❌ |
 
 ### Metrics
 | Feature		                        | Node.js | Java | Go | Ruby |
 | ------------------------------------- | --- | --- | --- | --- |
-| Metrics support                       | ✔️ | ❌ | ❌ | ❌ |
-| OS metrics                            | ✔️ | ❌ | ❌ | ❌ |
-| Process metrics                       | ✔️ | ❌ | ❌ | ❌ |
-| Moleculer metrics                     | ✔️ | ❌ | ❌ | ❌ |
+| Metrics support                       | ✔️ | ❌ | ✔️ | ❌ |
+| OS metrics                            | ✔️ | ❌ | ✔️ | ❌ |
+| Process metrics                       | ✔️ | ❌ | ✔️ | ❌ |
+| Moleculer metrics                     | ✔️ | ❌ | ✔️ | ❌ |
 | User-defined metrics                  | ✔️ | ❌ | ❌ | ❌ |
 | **Metric types**                      |  |  |  |  |
 | - Counter type                        | ✔️ | ❌ | ❌ | ❌ |
@@ -172,7 +172,7 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | - CSV                                 | ✔️ | ❌ | ❌ | ❌ |
 | - Event                               | ✔️ | ❌ | ❌ | ❌ |
 | - Datadog                             | ✔️ | ❌ | ❌ | ❌ |
-| - Prometheus                          | ✔️ | ❌ | ❌ | ❌ |
+| - Prometheus                          | ✔️ | ❌ | ✔️ | ❌ |
 | - StatsD (UDP)                        | ✔️ | ❌ | ❌ | ❌ |
 | - Custom reporter                     | ✔️ | ❌ | ❌ | ❌ |
 | Multi reporters                       | ✔️ | ❌ | ❌ | ❌ |
@@ -197,18 +197,18 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 ### Errors
 | Feature		                        | Node.js | Java | Go | Ruby |
 | ------------------------------------- | --- | --- | --- | --- |
-| `MoleculerError`                      | ✔️ | ️️✔️ | ❔ | ❌ |
-| `MoleculerRetryableError`             | ✔️ | ❔ | ❔ | ❌ |
-| `MoleculerServerError`                | ✔️ | ❔ | ❔ | ❌ |
-| `MoleculerClientError`                | ✔️ | ❔ | ❔ | ❌ |
+| `MoleculerError`                      | ✔️ | ️️✔️ | ❌ | ❌ |
+| `MoleculerRetryableError`             | ✔️ | ❔ | ❌ | ❌ |
+| `MoleculerServerError`                | ✔️ | ❔ | ❌ | ❌ |
+| `MoleculerClientError`                | ✔️ | ❔ | ❌ | ❌ |
 
 ### Additional features
 | Feature		                        | Node.js | Java | Go | Ruby |
 | ------------------------------------- | --- | --- | --- | --- |
-| Hot-reload                            | ✔️ | ❌ | ❔ | ❌ |
-| Runner/Starter                        | ✔️ | ✔️ | ❔ | ✔ |
-| API Gateway                           | ✔️ | ✔️ | ❔ | ❌ |
-| DB access service                     | ✔️ | ✔️ | ❔ | ❌ |
-| Ping nodes                     		| ✔️ | ✔️ | ❔ | ❌ |
-| Heartbeat                     		| ✔️ | ✔️ | ❔ | ✔ |
+| Hot-reload                            | ✔️ | ❌ | ❌ | ❌ |
+| Runner/Starter                        | ✔️ | ✔️ | ✔ | ✔ |
+| API Gateway                           | ✔️ | ✔️ | ✔ | ❌ |
+| DB access service                     | ✔️ | ✔️ | ✔ | ❌ |
+| Ping nodes                     		| ✔️ | ✔️ | ✔ | ❌ |
+| Heartbeat                     		| ✔️ | ✔️ | ✔ | ✔ |
 
