@@ -46,10 +46,10 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | Balanced events                     | ✔️ | ✔️ | ✔ | ✔ |
 | Broadcast events                    | ✔️ | ✔️ | ✔ | ❌ |
 | BroadcastLocal events               | ✔️ | ✔️ | ✔ | ❌ |
-| Context-based events                | ✔️ | ️️❌️ | ❌️ | ❌ |
+| Context-based events                | ✔️ | ️️✔️ | ❌️ | ❌ |
 | Custom group definition             | ✔️ | ️️✔️ | ✔ | ❌ |
 | **Internal events**                 |  ️ | ️️  |   |   |
-| `$services.changed`                 | ✔️ | ️️❌️ | ✔ | ❌ |
+| `$services.changed`                 | ✔️ | ️️✔️ | ✔ | ❌ |
 | `$node.*`                           | ✔️ | ️️❌️ | ❌️ | ❌ |
 | `$broker.*`                         | ✔️ | ️️❌️ | ❌️ | ❌ |
 | `$transporter.*`                    | ✔️ | ️️❌️ | ❌️ | ❌ |
@@ -100,7 +100,7 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | Random                                | ✔️ | ✔️ | ✔️ | ❌ |
 | CPU usage                             | ✔️ | ✔️ | ❌️ | ❌️ |
 | Latency-based                         | ✔️ | ✔️ | ❌️ | ❌️ |
-| Sharding                              | ✔️ | ❌ | ❌ | ❌ |
+| Shard                                 | ✔️ | ✔️ | ❌ | ❌ |
 | Custom                                | ✔️ | ✔️ | ✔️ | ❔ |
 
 ### Caching
@@ -198,17 +198,17 @@ Compatibility tests between Moleculer implementations (Node.js, Java, Go, Ruby)
 | Feature		                        | Node.js | Java | Go | Ruby |
 | ------------------------------------- | --- | --- | --- | --- |
 | `MoleculerError`                      | ✔️ | ️️✔️ | ❌ | ❌ |
-| `MoleculerRetryableError`             | ✔️ | ❔ | ❌ | ❌ |
-| `MoleculerServerError`                | ✔️ | ❔ | ❌ | ❌ |
-| `MoleculerClientError`                | ✔️ | ❔ | ❌ | ❌ |
+| `MoleculerRetryableError`             | ✔️ | ✔️ | ❌ | ❌ |
+| `MoleculerServerError`                | ✔️ | ✔️ | ❌ | ❌ |
+| `MoleculerClientError`                | ✔️ | ✔️ | ❌ | ❌ |
 
 ### Additional features
 | Feature		                        | Node.js | Java | Go | Ruby |
 | ------------------------------------- | --- | --- | --- | --- |
-| Hot-reload                            | ✔️ | ❌ | ❌ | ❌ |
+| Hot-reload                            | ✔️ | ✔️ | ❌ | ❌ |
 | Runner/Starter                        | ✔️ | ✔️ | ✔ | ✔ |
 | API Gateway                           | ✔️ | ✔️ | ✔ | ❌ |
-| DB access service                     | ✔️ | ✔️ | ✔ | ❌ |
+| DB access service                     | ✔️ | ❌ | ✔ | ❌ |
 | Ping nodes                     		| ✔️ | ✔️ | ✔ | ❌ |
 | Heartbeat                     		| ✔️ | ✔️ | ✔ | ✔ |
 
